@@ -1,11 +1,40 @@
+body{
+  height:auto;
+}
+h1 {
+  color: white;
+  margin-top: 140px;
+  font-family: fantasy;
+  margin-left: 440px;
+}
 
+h2 {
+  color: white;
+  margin-top: 80px;
+  font-family: fantasy;
+  margin-left: 400px;
+}
+p {
+  color: white;
+  margin-left: 50px;
+  margin-top: 50px;
+  font-family: fantasy;
+}
+
+nav {
+   position: fixed;
+   top: 0;
+   width: 100%;
+}
 ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
     overflow: hidden;
-    background-color: #333;
+    background-color: transparent;
     width: auto;
+    opacity: inherit;
+
 
 }
 
@@ -28,7 +57,7 @@ li a:hover, .dropdown:hover .dropbtn {
 
 li.dropdown {
     display: inline-block;
-    float: right;
+
 }
 
 .dropdown-content {
@@ -53,18 +82,65 @@ li.dropdown {
     display: block;
 }
 img {
-  height: auto;
-  width: 424px;
+  margin-top: 50px;
+  height: 300px;
+  width: 200px;
+  border: 2px solid black;
+  margin-left: 25px;
 }
 
-.flex-container {
+.Grid {
+  display: flex;
+  justify-content: center;
+  flex-flow: row;
+  background-color: white;
+}
+
+.Grid-cell2 {
+  flex: 1;
+  margin-top: 60px;
+  text-align: center;
+  font-weight: bolder;
+}
+.Grid-cell2 img{
+  height: 225px;
+  width: auto;
+}
+.Grid-cell3 {
+  flex: 1;
+  margin-top: 60px;
+  text-align: center;
+  font-weight: bolder;
+}
+.Grid-cell3 img{
+  height: 225px;
+  width: auto;
+}
+
+.Grid-cell4 {
+  flex: 1;
+  margin-top: 60px;
+  text-align: center;
+  font-weight: bolder;
+
+}
+.Grid-cell4 img{
+  height: 225px;
+  width: auto;
+}
+
+.container {
   display: flex;
   flex-flow: row;
-  justify-content: left;
 }
 
-.navbar-text {
-  color: white;
-  margin-left: 200px;
-  font-size: 15px;
+.photos {
+  display: flex;
+  flex-flow: row;
+  margin-left: 150px;
+}
+
+.resume img {
+  height: 550px;
+  width: auto;
 }
